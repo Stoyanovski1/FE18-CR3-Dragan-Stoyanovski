@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+h1 {
+    font-family: 'Julee', cursive;
+    text-shadow: 1px 3px 2px black;
+}
+
+.img1 {
+    width: 100%;
+    height: 27vh;
+}
+
+#combi {
+    padding-top: 40px;
+}

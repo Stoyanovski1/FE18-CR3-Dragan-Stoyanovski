@@ -1,0 +1,20 @@
+<h1 class="text-center my-5" style="text-shadow: 1px 3px 5px black;">Food Details</h1>
+<div *ngIf="product">
+    <div class="container">
+        <div class="card mb-5 p-2" style="width: 18rem; margin: 0 auto; box-shadow: 2px 5px 15px black; ">
+            <img src="{{product.img}}" class="card-img-top" style="box-shadow: 1px 3px 9px black;" alt="{{product.name}}">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{product.name}}</h5>
+                <p class="card-text text-center">{{product.desc}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">{{product.description}}</li>
+                <li class="list-group-item text-center">Price: €{{product.price}}</li>
+            </ul>
+            <div class="card-body">
+                <button class="btn btn-primary" routerLink="/products"><i class="bi bi-chevron-double-left"></i> Back</button>
+                <button class="btn btn-success float-end" (click)="addToCart()" (click)="addToOrder()">Add To Cart {{number}}</button>
+            </div>
+        </div>
+    </div>
+</div>

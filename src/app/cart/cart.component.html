@@ -1,0 +1,59 @@
+<h1 class="text-center my-5">Food Details</h1>
+<div class="container helo">
+    <p class="h4 py-2"> Item(s)</p>
+</div>
+<div *ngFor="let val of product" class="com">
+    <div class="container">
+        <div class="card mb-3 cart1" style="width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{val.img}}" class="img-fluid rounded-start" alt="{{val.name}} ">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title mt-5">{{val.name}}</h3>
+                        <p class="card-text">{{val.desc}}</p>
+                        <p class="card-text">Ingredients: {{val.description}}</p>
+                        <p class="card-text">Price: €{{val.price}}</p>
+                    </div>
+                </div>
+            </div>
+            <p class="line my-3"></p>
+        </div>
+    </div>
+</div>
+<div class="container sum">
+    <div class=" summary my-5">
+        <h5 class="h5 py-2 ps-2">Summary</h5>
+        <div class="price">
+            <p class="ps-2">Products</p>
+            <p class="ps-2">Service</p>
+            <p class="ps-2">Discount</p>
+            <hr>
+            <p class="ps-2">Total amount(including VAT)</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5" style="margin-top: 100px;">
+    <h1 class="text-center">Order Form</h1>
+    <h4 class="text-center">Please complete the delivery details</h4>
+    <hr>
+</div>
+<div class=" container mb-5 ">
+    <form class="combi">
+        <label for=" name ">First Name:</label> <br>
+        <input type="text " id="name " formControlName="name "> <br>
+
+        <label for="lname ">Last Name:</label> <br>
+        <input type="text " id="lname " formControlName="lname "> <br>
+
+        <label for="address ">Address:</label><br>
+        <input type="text " id="address " formControlName="address "> <br>
+
+        <label for="tel ">Contact: </label> <br>
+        <input type="number " id="tel " formControlName="tel "> <br>
+
+        <input type="button " value="Create " class="btn btn-success mt-2" (click)="create()">
+    </form>
+</div>

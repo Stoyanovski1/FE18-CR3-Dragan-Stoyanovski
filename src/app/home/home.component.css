@@ -1,0 +1,55 @@
+/* .headImg {
+    width: 100%;
+    height: 60vh;
+
+} */
+
+.combi1 {
+    background-image: url(/assets/menuImg.png);
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.combi1::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 11rem;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 4.1rem;
+}
+
+.content p {
+    font-size: 1.3rem;
+}
+
+.content button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    /* outline: none; */
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+.content button:hover {
+    opacity: 1;
+    transition: 0.5s;
+}

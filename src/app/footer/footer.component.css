@@ -1,0 +1,9 @@
+.foot {
+    background-color: black;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}

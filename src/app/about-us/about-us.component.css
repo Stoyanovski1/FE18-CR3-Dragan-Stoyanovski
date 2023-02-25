@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+.div1 {
+    background-color: rgb(235, 231, 231);
+}
+
+.text1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h1 {
+    text-shadow: 1px 3px 2px black;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Julee', cursive;
+}
+
+.h1_1 {
+    text-shadow: 1px 3px 2px black;
+    font-family: 'Julee', cursive;
+}
+
+.div2 {
+    position: relative;
+}
+
+.div2_1 {
+    position: absolute;
+    left: 25vw;
+    right: 0;
+    top: 73vh;
+}
+
+
+/* .text1 p {
+    font-family: 'Luxurious Script', cursive;
+} */

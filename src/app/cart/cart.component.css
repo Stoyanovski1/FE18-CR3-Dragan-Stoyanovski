@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+.cart1 {
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    box-shadow: 5px 5px 15px black;
+}
+
+h1,
+h4,
+label {
+    font-family: 'Julee', cursive;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    border: 2px solid rgb(218, 212, 212);
+    background-color: rgb(241, 235, 235);
+}
+
+.helo1 {
+    margin-top: 300px;
+    width: 600px;
+    height: 300px;
+}
+
+.summary {
+    border: 1px solid gray;
+    width: 300px;
+    height: 230px;
+}
+
+.h5 {
+    background-color: rgb(202, 202, 202);
+}
+
+.combi {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    width: 500px;
+    height: 40vh;
+    box-shadow: 1px 3px 10px black;
+}

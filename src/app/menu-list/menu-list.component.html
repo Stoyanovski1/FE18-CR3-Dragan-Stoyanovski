@@ -1,0 +1,26 @@
+<h1 class="text-center my-5">Food Details</h1>
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <div *ngFor="let val of product; index as id">
+        <div class="container" id="combi">
+            <div class="card mb-5 p-2" style="width: 20rem; height: 470px; margin: 0 auto; box-shadow: 2px 2px 15px black;">
+                <img src="{{val.img}}" class="card-img-top img1" style="box-shadow: 1px 3px 9px black;" alt="{{val.name}}">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="text-shadow: 1px 1px 2px black;">{{val.name}}</h5>
+                    <p class="text-center">{{val.desc}}</p>
+                </div>
+                <ul class=" list-group list-group-flush ">
+                    <li class="list-group-item ">€{{val.price}}</li>
+                </ul>
+                <div class="card-body">
+                    <ng-template [ngIf]="val.isAvailable === true" [ngIfElse]="demo">
+                        <button class="btn btn-primary card-link" routerLink="/products/{{id}}">Details</button>
+                        <button class="btn btn-success card-link float-end" (click)="addToCart(this.val)" (click)="addToOrder()">Add To Cart {{number}}</button>
+                    </ng-template>
+                    <ng-template #demo>
+                        <p class="text-danger text-center">Not available!</p>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
