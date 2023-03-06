@@ -25,7 +25,7 @@
     <div class="container div2 text-center">
         <h1 class="text-center py-4 h1_1">Check our specials</h1>
         <p class="text-center" style="font-size: 1.2rem;">You can choose our specials here:</p>
-        <div class="card mb-5" style="width: 17rem; box-shadow: 1px 5px 10px black;">
+        <!-- <div class="card mb-5" style="width: 17rem; box-shadow: 1px 5px 10px black;">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item active">Pizza Capricciosa</li>
                 <li class="list-group-item">Spaghetti Carbonara</li>
@@ -49,5 +49,33 @@
                 </div>
             </div>
         </div>
+    </div> -->
+        <div>
+            <div class="row my-5" *ngIf="product" style="height: 30vh">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Pizza Capricciosa</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Spaghetti Carbonara</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Lasagna</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Burger</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><img src="/assets/capri.png" alt="img" style="width: 30%; height:170px; float: left;">
+                            <p style="padding-top: 70px;">Pizza Capricciosa is a classic Italian pizza <br> Preis: €15.99</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><img src="/assets/carbonara.png" alt="img" style="width: 30%; height:170px; float: left;">
+                            <p style="padding-top: 70px;">Spaghetti carbonara is a classic Italian dish <br> Preis: €15.99</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><img src="/assets/burger.png" alt="img" style="width: 30%; height:170px; float: left;">
+                            <p style="padding-top: 70px;">Lasagna is a popular classic Italian specialty <br>Preis: €10.99 </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"><img src="/assets/lasagne.png" alt="img" style="width: 30%; height:170px; float: left;">
+                            <p style="padding-top: 70px;">The sizzle of the grill, the aroma of charred meat <br>Preis: €13.99 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>

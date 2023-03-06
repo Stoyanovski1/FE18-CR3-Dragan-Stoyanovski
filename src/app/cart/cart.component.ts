@@ -11,6 +11,7 @@ import { contact } from '../cartC';
 })
 export class CartComponent implements OnInit {
   product: Array<IProduct> = []
+  test = new Date();
   constructor(private CS: CartService){ }
 
   form = new FormGroup({

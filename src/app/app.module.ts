@@ -25,7 +25,7 @@ import { MenuDetailsComponent } from './menu-details/menu-details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

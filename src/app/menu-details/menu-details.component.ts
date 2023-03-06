@@ -36,3 +36,7 @@ ngOnInit(){
   })
 }
 }
+// CREATE DATABASE <Slim_Store>;
+// CREATE DATABASE soap_shop
+// DROP DATABASE <database_name>
+// USE <database_name>
