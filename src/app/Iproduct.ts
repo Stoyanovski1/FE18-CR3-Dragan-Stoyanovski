@@ -5,5 +5,5 @@ export interface IProduct{
     img: string,
     isAvailable: boolean,
     desc: string,
-    qtty?: number
+    qtty: number
 }

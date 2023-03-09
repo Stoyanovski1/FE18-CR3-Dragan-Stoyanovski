@@ -12,7 +12,29 @@ import { contact } from '../cartC';
 export class CartComponent implements OnInit {
   product: Array<IProduct> = []
   test = new Date();
+  sum : number = 0;
   constructor(private CS: CartService){ }
+  sumItems(){
+    let item = 0;
+    for( let j = 0; j < this.product.length; j++){
+      item += this.product[j].qtty;
+    }
+    return item;
+  }
+  getTotalAmount(){
+    let total = 0;
+    for(let i = 0; i < this.product.length; i++){
+      total += this.product[i].price;
+    }
+    return total;
+  }
+  AmountTotal(){
+    for(let k = 0; k < this.product.length; k++){
+      this.sum = this.getTotalAmount() * 0.8
+    }
+    return this.sum.toFixed(2);
+  }
+  
 
   form = new FormGroup({
     name: new FormControl('',[Validators.required, Validators.minLength(4)]),

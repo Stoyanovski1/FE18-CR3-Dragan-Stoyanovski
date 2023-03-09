@@ -1,6 +1,6 @@
 <h1 class="text-center my-5">Food Details</h1>
 <div class="container helo">
-    <p class="h4 py-2"> Item(s)</p>
+    <p class="h4 py-2">{{sumItems()}} Item(s)</p>
 </div>
 <div *ngFor="let val of product" class="com">
     <div class="container">
@@ -24,13 +24,14 @@
 </div>
 <div class="container sum">
     <div class=" summary my-5">
-        <h5 class="h5 py-2 ps-2">Summary</h5>
+        <h5 class="h5 py-2 ps-2">Summary {{getTotalAmount()}}</h5>
+        <!-- {{(getTotalAmount() * 0.7).toFixed(2)}} second fontion for the Amount -->
         <div class="price">
             <p class="ps-2">Products</p>
             <p class="ps-2">Service</p>
             <p class="ps-2">Discount</p>
             <hr>
-            <p class="ps-2">Total amount(including VAT)</p>
+            <p class="ps-2">Total amount (including VAT): {{AmountTotal()}}</p>
         </div>
     </div>
 </div>
